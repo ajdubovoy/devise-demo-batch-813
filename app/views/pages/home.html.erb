@@ -1,2 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Devise is Fun!</h1>
+
+<% if user_signed_in? %>
+  <p>You are signed in as <%= current_user.email %></p>
+<% else %>
+  <p>You are not signed in to this site yet...</p>
+<% end %>
